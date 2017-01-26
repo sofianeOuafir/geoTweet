@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Fabric
+import TwitterKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        GMSServices.provideAPIKey("AIzaSyAq-l--HgFXRHLHU3l64nunBoEHxGxtJKU")
+        Fabric.with([Twitter.self])
         // Override point for customization after application launch.
         return true
     }

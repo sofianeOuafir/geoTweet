@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D4E7DB91E39128D00018D72 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4D4E7DB81E39128D00018D72 /* Podfile */; };
+		4D83FF651E326B0A00E2786A /* Fabric.app in Resources */ = {isa = PBXBuildFile; fileRef = 4D83FF641E326B0A00E2786A /* Fabric.app */; };
+		4D83FF6F1E32729D00E2786A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D83FF6B1E32729D00E2786A /* Fabric.framework */; };
+		4D83FF701E32729D00E2786A /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D83FF6C1E32729D00E2786A /* TwitterKit.framework */; };
+		4D83FF711E32729D00E2786A /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D83FF6D1E32729D00E2786A /* TwitterKitResources.bundle */; };
+		4D83FF721E32729D00E2786A /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D83FF6E1E32729D00E2786A /* TwitterCore.framework */; };
+		4DA49CAD1E28EB0C009C7597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA49CAC1E28EB0C009C7597 /* AppDelegate.swift */; };
+		4DA49CAF1E28EB0C009C7597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA49CAE1E28EB0C009C7597 /* ViewController.swift */; };
+		4DA49CB21E28EB0C009C7597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA49CB01E28EB0C009C7597 /* Main.storyboard */; };
+		4DA49CB41E28EB0C009C7597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA49CB31E28EB0C009C7597 /* Assets.xcassets */; };
+		4DA49CB71E28EB0C009C7597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA49CB51E28EB0C009C7597 /* LaunchScreen.storyboard */; };
+		4DA49CC21E28EB0C009C7597 /* geotweetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA49CC11E28EB0C009C7597 /* geotweetTests.swift */; };
+		4DA49CCD1E28EB0C009C7597 /* geotweetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA49CCC1E28EB0C009C7597 /* geotweetUITests.swift */; };
+		4DC06EFE1E35FF84008D74BD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC06EFD1E35FF84008D74BD /* MapViewController.swift */; };
+		DB420AC97276EAFFDDB40BAD /* Pods_geotweet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C3542354E093D9CBD75B53 /* Pods_geotweet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DA49CBE1E28EB0C009C7597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA49CA11E28EB0C009C7597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DA49CA81E28EB0C009C7597;
+			remoteInfo = geotweet;
+		};
+		4DA49CC91E28EB0C009C7597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA49CA11E28EB0C009C7597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DA49CA81E28EB0C009C7597;
+			remoteInfo = geotweet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19EE4A5563C76A6E0E9E18BE /* Pods-geotweet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geotweet.release.xcconfig"; path = "Pods/Target Support Files/Pods-geotweet/Pods-geotweet.release.xcconfig"; sourceTree = "<group>"; };
+		4D4E7DB81E39128D00018D72 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4D83FF641E326B0A00E2786A /* Fabric.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Fabric.app; path = /Users/ga605434/Downloads/Fabric.app; sourceTree = "<absolute>"; };
+		4D83FF6B1E32729D00E2786A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		4D83FF6C1E32729D00E2786A /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		4D83FF6D1E32729D00E2786A /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		4D83FF6E1E32729D00E2786A /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		4DA49CA91E28EB0C009C7597 /* geotweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geotweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA49CAC1E28EB0C009C7597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DA49CAE1E28EB0C009C7597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DA49CB11E28EB0C009C7597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DA49CB31E28EB0C009C7597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DA49CB61E28EB0C009C7597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DA49CB81E28EB0C009C7597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA49CBD1E28EB0C009C7597 /* geotweetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = geotweetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA49CC11E28EB0C009C7597 /* geotweetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geotweetTests.swift; sourceTree = "<group>"; };
+		4DA49CC31E28EB0C009C7597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA49CC81E28EB0C009C7597 /* geotweetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = geotweetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA49CCC1E28EB0C009C7597 /* geotweetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geotweetUITests.swift; sourceTree = "<group>"; };
+		4DA49CCE1E28EB0C009C7597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC06EFD1E35FF84008D74BD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		98C3542354E093D9CBD75B53 /* Pods_geotweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geotweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6C2F442D8533A79B2F3ABC /* Pods-geotweet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geotweet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geotweet/Pods-geotweet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DA49CA61E28EB0C009C7597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D83FF6F1E32729D00E2786A /* Fabric.framework in Frameworks */,
+				4D83FF721E32729D00E2786A /* TwitterCore.framework in Frameworks */,
+				4D83FF701E32729D00E2786A /* TwitterKit.framework in Frameworks */,
+				DB420AC97276EAFFDDB40BAD /* Pods_geotweet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA49CBA1E28EB0C009C7597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA49CC51E28EB0C009C7597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A19FEC98BF9C444D3A526A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98C3542354E093D9CBD75B53 /* Pods_geotweet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27AB4850A1874D4AFD9910B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A6C2F442D8533A79B2F3ABC /* Pods-geotweet.debug.xcconfig */,
+				19EE4A5563C76A6E0E9E18BE /* Pods-geotweet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4DA49CA01E28EB0C009C7597 = {
+			isa = PBXGroup;
+			children = (
+				4DA49CAB1E28EB0C009C7597 /* geotweet */,
+				4DA49CC01E28EB0C009C7597 /* geotweetTests */,
+				4DA49CCB1E28EB0C009C7597 /* geotweetUITests */,
+				4DA49CAA1E28EB0C009C7597 /* Products */,
+				4D83FF6B1E32729D00E2786A /* Fabric.framework */,
+				4D83FF6C1E32729D00E2786A /* TwitterKit.framework */,
+				4D83FF6D1E32729D00E2786A /* TwitterKitResources.bundle */,
+				4D83FF6E1E32729D00E2786A /* TwitterCore.framework */,
+				27AB4850A1874D4AFD9910B8 /* Pods */,
+				1A19FEC98BF9C444D3A526A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DA49CAA1E28EB0C009C7597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DA49CA91E28EB0C009C7597 /* geotweet.app */,
+				4DA49CBD1E28EB0C009C7597 /* geotweetTests.xctest */,
+				4DA49CC81E28EB0C009C7597 /* geotweetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DA49CAB1E28EB0C009C7597 /* geotweet */ = {
+			isa = PBXGroup;
+			children = (
+				4DA49CAC1E28EB0C009C7597 /* AppDelegate.swift */,
+				4DA49CAE1E28EB0C009C7597 /* ViewController.swift */,
+				4DA49CB01E28EB0C009C7597 /* Main.storyboard */,
+				4DA49CB31E28EB0C009C7597 /* Assets.xcassets */,
+				4DA49CB51E28EB0C009C7597 /* LaunchScreen.storyboard */,
+				4DA49CB81E28EB0C009C7597 /* Info.plist */,
+				4DC06EFD1E35FF84008D74BD /* MapViewController.swift */,
+				4D4E7DB81E39128D00018D72 /* Podfile */,
+			);
+			path = geotweet;
+			sourceTree = "<group>";
+		};
+		4DA49CC01E28EB0C009C7597 /* geotweetTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DA49CC11E28EB0C009C7597 /* geotweetTests.swift */,
+				4DA49CC31E28EB0C009C7597 /* Info.plist */,
+			);
+			path = geotweetTests;
+			sourceTree = "<group>";
+		};
+		4DA49CCB1E28EB0C009C7597 /* geotweetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DA49CCC1E28EB0C009C7597 /* geotweetUITests.swift */,
+				4DA49CCE1E28EB0C009C7597 /* Info.plist */,
+			);
+			path = geotweetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DA49CA81E28EB0C009C7597 /* geotweet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA49CD11E28EB0C009C7597 /* Build configuration list for PBXNativeTarget "geotweet" */;
+			buildPhases = (
+				76FEE75DB183F432E58FBC02 /* [CP] Check Pods Manifest.lock */,
+				4DA49CA51E28EB0C009C7597 /* Sources */,
+				4DA49CA61E28EB0C009C7597 /* Frameworks */,
+				4DA49CA71E28EB0C009C7597 /* Resources */,
+				4D83FF6A1E32723800E2786A /* ShellScript */,
+				254E19AEC1555BBEDB396DC7 /* [CP] Embed Pods Frameworks */,
+				A1773161E4F838BDCEF6F7C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = geotweet;
+			productName = geotweet;
+			productReference = 4DA49CA91E28EB0C009C7597 /* geotweet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DA49CBC1E28EB0C009C7597 /* geotweetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA49CD41E28EB0C009C7597 /* Build configuration list for PBXNativeTarget "geotweetTests" */;
+			buildPhases = (
+				4DA49CB91E28EB0C009C7597 /* Sources */,
+				4DA49CBA1E28EB0C009C7597 /* Frameworks */,
+				4DA49CBB1E28EB0C009C7597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DA49CBF1E28EB0C009C7597 /* PBXTargetDependency */,
+			);
+			name = geotweetTests;
+			productName = geotweetTests;
+			productReference = 4DA49CBD1E28EB0C009C7597 /* geotweetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DA49CC71E28EB0C009C7597 /* geotweetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA49CD71E28EB0C009C7597 /* Build configuration list for PBXNativeTarget "geotweetUITests" */;
+			buildPhases = (
+				4DA49CC41E28EB0C009C7597 /* Sources */,
+				4DA49CC51E28EB0C009C7597 /* Frameworks */,
+				4DA49CC61E28EB0C009C7597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DA49CCA1E28EB0C009C7597 /* PBXTargetDependency */,
+			);
+			name = geotweetUITests;
+			productName = geotweetUITests;
+			productReference = 4DA49CC81E28EB0C009C7597 /* geotweetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DA49CA11E28EB0C009C7597 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "GELE Axel";
+				TargetAttributes = {
+					4DA49CA81E28EB0C009C7597 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					4DA49CBC1E28EB0C009C7597 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DA49CA81E28EB0C009C7597;
+					};
+					4DA49CC71E28EB0C009C7597 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DA49CA81E28EB0C009C7597;
+					};
+				};
+			};
+			buildConfigurationList = 4DA49CA41E28EB0C009C7597 /* Build configuration list for PBXProject "   " */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DA49CA01E28EB0C009C7597;
+			productRefGroup = 4DA49CAA1E28EB0C009C7597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DA49CA81E28EB0C009C7597 /* geotweet */,
+				4DA49CBC1E28EB0C009C7597 /* geotweetTests */,
+				4DA49CC71E28EB0C009C7597 /* geotweetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DA49CA71E28EB0C009C7597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4E7DB91E39128D00018D72 /* Podfile in Resources */,
+				4D83FF651E326B0A00E2786A /* Fabric.app in Resources */,
+				4DA49CB71E28EB0C009C7597 /* LaunchScreen.storyboard in Resources */,
+				4DA49CB41E28EB0C009C7597 /* Assets.xcassets in Resources */,
+				4DA49CB21E28EB0C009C7597 /* Main.storyboard in Resources */,
+				4D83FF711E32729D00E2786A /* TwitterKitResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA49CBB1E28EB0C009C7597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA49CC61E28EB0C009C7597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		254E19AEC1555BBEDB396DC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geotweet/Pods-geotweet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D83FF6A1E32723800E2786A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 7a3af3bdc0ea64aa3a2cfa241c703f9a53d528bd 09afdf225505afc90719e88c5f7437d514bf95ca83939681f32660d6df99f40f";
+		};
+		76FEE75DB183F432E58FBC02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1773161E4F838BDCEF6F7C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geotweet/Pods-geotweet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DA49CA51E28EB0C009C7597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA49CAF1E28EB0C009C7597 /* ViewController.swift in Sources */,
+				4DC06EFE1E35FF84008D74BD /* MapViewController.swift in Sources */,
+				4DA49CAD1E28EB0C009C7597 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA49CB91E28EB0C009C7597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA49CC21E28EB0C009C7597 /* geotweetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA49CC41E28EB0C009C7597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA49CCD1E28EB0C009C7597 /* geotweetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DA49CBF1E28EB0C009C7597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DA49CA81E28EB0C009C7597 /* geotweet */;
+			targetProxy = 4DA49CBE1E28EB0C009C7597 /* PBXContainerItemProxy */;
+		};
+		4DA49CCA1E28EB0C009C7597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DA49CA81E28EB0C009C7597 /* geotweet */;
+			targetProxy = 4DA49CC91E28EB0C009C7597 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DA49CB01E28EB0C009C7597 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA49CB11E28EB0C009C7597 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DA49CB51E28EB0C009C7597 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA49CB61E28EB0C009C7597 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DA49CCF1E28EB0C009C7597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DA49CD01E28EB0C009C7597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DA49CD21E28EB0C009C7597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6C2F442D8533A79B2F3ABC /* Pods-geotweet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = geotweet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDCours.geotweet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4DA49CD31E28EB0C009C7597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19EE4A5563C76A6E0E9E18BE /* Pods-geotweet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = geotweet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDCours.geotweet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4DA49CD51E28EB0C009C7597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = geotweetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDCours.geotweetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/geotweet.app/geotweet";
+			};
+			name = Debug;
+		};
+		4DA49CD61E28EB0C009C7597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = geotweetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDCours.geotweetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/geotweet.app/geotweet";
+			};
+			name = Release;
+		};
+		4DA49CD81E28EB0C009C7597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = geotweetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDCours.geotweetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = geotweet;
+			};
+			name = Debug;
+		};
+		4DA49CD91E28EB0C009C7597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = geotweetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TDCours.geotweetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = geotweet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DA49CA41E28EB0C009C7597 /* Build configuration list for PBXProject "   " */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA49CCF1E28EB0C009C7597 /* Debug */,
+				4DA49CD01E28EB0C009C7597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DA49CD11E28EB0C009C7597 /* Build configuration list for PBXNativeTarget "geotweet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA49CD21E28EB0C009C7597 /* Debug */,
+				4DA49CD31E28EB0C009C7597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DA49CD41E28EB0C009C7597 /* Build configuration list for PBXNativeTarget "geotweetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA49CD51E28EB0C009C7597 /* Debug */,
+				4DA49CD61E28EB0C009C7597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DA49CD71E28EB0C009C7597 /* Build configuration list for PBXNativeTarget "geotweetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA49CD81E28EB0C009C7597 /* Debug */,
+				4DA49CD91E28EB0C009C7597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DA49CA11E28EB0C009C7597 /* Project object */;
+}
