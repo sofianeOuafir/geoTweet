@@ -20,16 +20,17 @@ class MapViewController: UIViewController {
         myTextField = UITextField(frame: CGRect(x: 0, y: 50, width: 300, height: 50))
         myTextField.placeholder = "Enter a hashtag !"
         self.view.addSubview(myTextField)
-        
-        let myButton = UIButton(frame: CGRect(x: 300, y: 50, width: 114, height: 50))
-        myButton.setTitle("Search", for: .normal)
+        let myButton = UIButton(type: .system)
+        myButton.frame = CGRect(x: 300, y: 50, width: 114, height: 50)
+//        let myButton = UIButton(frame: CGRect(x: 300, y: 50, width: 114, height: 50))
+        myButton.setTitle("Find", for: .normal)
         myButton.addTarget(self, action: #selector(self.markTweet), for: .touchDown)
-        myButton.backgroundColor = UIColor.black
         view.addSubview(myButton)
         
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 3)
         mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height - 100), camera: camera)
         mapView.isMyLocationEnabled = true
+        mapView.settings.zoomGestures = true
         
         
 
@@ -39,7 +40,7 @@ class MapViewController: UIViewController {
     
     func markTweet()
     {
-        
+        mapView.clear()
         let hashtag = "#" + myTextField.text!
         if let userID = Twitter.sharedInstance().sessionStore.session()?.userID {
             let client = TWTRAPIClient(userID: userID)
@@ -56,17 +57,24 @@ class MapViewController: UIViewController {
                 
                 do {
                     let json = JSON(data: data!)
-                    
+                    print(json)
                     for item in json["statuses"].arrayValue
                     {
-                        let longitude = item["place"]["bounding_box"]["coordinates"][0][0][0].double
-                        let latitude = item["place"]["bounding_box"]["coordinates"][0][0][1].double
+                        print(item["geo"]["coordinates"][0])
+                        let longitude = item["geo"]["coordinates"][1].double
+                        let latitude = item["geo"]["coordinates"][0].double
                         if(latitude != nil && longitude != nil)
                         {
                             let  position = CLLocationCoordinate2DMake(latitude!, longitude!)
                             let marker = GMSMarker(position: position)
                             marker.title = ""
+                            //marker.icon = UIImage(named: "twitter.png")
+                            marker.title = item["text"].stringValue
                             marker.map = self.mapView
+                            marker.opacity = 0.6
+
+                            self.mapView.camera = GMSCameraPosition.camera(withLatitude: latitude!, longitude: longitude!, zoom: 3)
+
                         }
                     }
                     
