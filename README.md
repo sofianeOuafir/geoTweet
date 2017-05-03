@@ -4,7 +4,7 @@
 <p>The program will look for tweets with the keyword (hashtag #) you are looking for from the tweets provided by tweeter API</p>
 <div style="display:ineline-block;">
 <img src="https://github.com/sofianeOuafir/geotweet/blob/master/buttonTwitter.png?raw=true">
-<img src="https://github.com/sofianeOuafir/geotweet/blob/master/connection.png">
+<img src="https://github.com/sofianeOuafir/geotweet/blob/master/connection.png?raw=true">
 </div>
 
 <div style="display:ineline-block;">
